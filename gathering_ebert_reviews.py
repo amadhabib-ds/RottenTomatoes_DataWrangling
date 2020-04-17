@@ -100,5 +100,3 @@ for url in ebert_review_urls:
     response = requests.get(url)
     with open(os.path.join(folder_name, url.split('/')[-1]), mode = 'wb') as file:
         file.write(response.content)
-
-os.listdir(folder_name)
